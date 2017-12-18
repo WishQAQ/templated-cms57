@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/css.css"  />
+<script src="{dede:global.cfg_basehost/}/style/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_basehost/}/style/js/picmain.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="wrap clearfix">
+{dede:include filename='head.htm'/}
+
+<!--right-->
+  <div class="show_right fr">
+    <div class="banner_n"><img src="{dede:global.cfg_basehost/}/style/images/banner_n.jpg"  /></div>
+    <div class="main">
+     <div class="locat">当前位置：{dede:field name='position'/}</div>
+     
+     <div class="newslist">
+      <ul class="clearfix">
+      {dede:list pagesize='10' }
+       <li>
+        <div class="newslist_img fl"><a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]"  /></a></div>
+        <div class="newslist_txt fr">
+          <h4><a href="[field:arcurl/]" >[field:title/]</a></h4>
+          <h5>data：[field:pubdate function="GetDateMK(@me)"/]</h5>
+          <div class="newslist_txt_con">[field:description/]...</div>
+        </div>
+      </li>
+      {/dede:list}
+     
+       <div class="bor_bot"></div>
+       </ul>
+      </div>
+      <!--分页-->
+      <div class="Page clearfix">
+       {dede:pagelist istitem='index,pre,next,end,end,option,' listsize='4' /}
+      </div>
+      
+      {dede:include filename='footer.htm'/}
+    </div>
+   </div>
+   </div>
+</body>
+</html>

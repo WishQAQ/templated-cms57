@@ -1,0 +1,1 @@
+<div class="index_news_img fr"><a href="[field:arcurl/]"><img src="[field:picname/]" /></a></div>

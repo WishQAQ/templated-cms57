@@ -1,0 +1,27 @@
+<!-- left nav start -->
+  <div class="index_left fl">
+    <div class="logo"><img src="{dede:global.cfg_basehost/}/style/images/logo.jpg"  /></div>
+    <div class="nav">
+      <ul>
+        <li class="nav_0"><a href="/" >网站首页</a></li>
+        {dede:channel row='3'  type=top}
+        <li class="now_0[field:global name=autoindex runphp="yes"]@me=@me+1;[/field:global]"><a href="[field:typeurl/]" >[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </div>
+    <div class="tel">
+      <ul>
+        <li class="tel_con">电话：400-000-0000</li>
+      </ul>
+    </div>
+  </div>
+
+<style>
+    .nav li.now_0{dede:type}[field:ID /]{/dede:type}{
+        background: #495461 !important;
+    }
+    .nav li a{
+      display: block;
+    }
+</style>
+<!-- left nav end-->

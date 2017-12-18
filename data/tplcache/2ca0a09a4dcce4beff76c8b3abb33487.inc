@@ -1,0 +1,1 @@
+<a href="[field:typelink /]"><img src="[field:global.cfg_basehost/]/style/images/objpic01.jpg"  /></a><a href="[field:typelink /]"><span>儿童摄影</span></a>

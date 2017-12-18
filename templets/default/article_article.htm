@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/css.css"  />
+<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/jquery-1.8.2.min.js" ></script>
+<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/picmain.js" ></script>
+
+</head>
+
+<body>
+<div class="wrap clearfix">
+{dede:include filename='head.htm'/}
+
+<!--right-->
+  <div class="show_right fr">
+   <div class="banner_n"><img src="{dede:global.cfg_basehost/}/style/images/banner_n.jpg"  /></div>
+    <div class="main">
+     <div class="locat">当前位置：{dede:field name='position'/}</div>
+     
+     <div class="about_tit"><h4>{dede:field.title/}</h4></div>
+     <div class="about_data">文章作者：{dede:field.writer/} 上传时间：{dede:field name='pubdate' function='GetDateMk(@me)'/}</div>
+     <div class="about_con">
+     {dede:field.body/}
+</div>
+     <div class="con_page clearfix">
+       <div class="prev fl">{dede:prenext get='pre'/}</div>
+       <div class="next fr">{dede:prenext get='next'/}</div>
+     </div>
+     <!--推荐信息-->
+     <div class="contenttjtext clearfix">
+      <h2>推荐信息</h2>
+       <ul>
+        {dede:arclist row='8' orderby='pubdate' titlelen='50'}
+         <li><a href="[field:arcurl/]">[field:title/]</a></li>
+         {/dede:arclist}
+       </ul>
+      </div>
+      {dede:include filename='footer.htm'/}
+    </div>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+<a href="[field:typelink /]"><img src="{dede:global.cfg_basehost/}/style/images/objpic03.jpg"  /></a><a href="[field:typelink /]"><span>婚纱摄影</span></a>

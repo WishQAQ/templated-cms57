@@ -1,0 +1,1 @@
+<a href="[field:typelink /]"><img src="[field:global.cfg_basehost/]/style/images/objpic04.jpg"   /></a><a href="[field:typelink /]"><span>创意摄影</span></a>

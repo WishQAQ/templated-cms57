@@ -1,0 +1,1 @@
+<div class="index_news_img fr"><img src="[field:picname/]" /></div>
